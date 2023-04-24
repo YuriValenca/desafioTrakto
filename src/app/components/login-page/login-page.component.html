@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="content">
+    <img src='../assets/trakto-logo.svg' alt="trakto-logo" class="trakto-logo" />
+    <p class="login-text">Olá, faça login em sua conta</p>
+    <div class="form-field">
+      <p class="email-text">E-mail</p>
+      <input type="text" class="email-input" id="email-input" #email />
+    </div>
+    <div class="form-field">
+      <p class="password-text">Senha</p>
+      <input type="password" class="password-input" id="password-input" #password />
+    </div>
+    <button class="login-button" (click)="login(email.value, password.value)">
+      <ng-container *ngIf="isLoading">
+        <div class="spinner"></div>
+        <span>Entrando...</span>
+      </ng-container>
+      <ng-container *ngIf="!isLoading">
+        Entrar
+      </ng-container>
+    </button>    
+  </div>
+</div>
