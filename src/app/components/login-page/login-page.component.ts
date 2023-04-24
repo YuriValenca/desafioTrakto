@@ -2,7 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { tap, catchError } from 'rxjs/operators';
-import { of } from 'rxjs';
 
 interface LoginResponse {
   access_token: string;
@@ -45,8 +44,9 @@ export class LoginPageComponent implements OnInit {
           this.router.navigate(['/modules']);
         }),
         catchError(error => {
+          this.isLoading = false
           this.isLoggedIn = false;
-          return of(null);
+          throw error;
         })
       )
       .subscribe(() => this.isLoading = false);
