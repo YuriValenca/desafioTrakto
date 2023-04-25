@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+
+.module-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 49px;
+  color: #FFFFFF;
+  line-height: 63px;
+}
+
+.separator {
+  width: 28px;
+  height: 4px;
+  border: none;
+  margin-bottom: 32px;
+}
+
+.md-module-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
