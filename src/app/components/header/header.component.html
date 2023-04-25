@@ -1,0 +1,25 @@
+<header [ngClass]="{'modules-header': dark, 'white-modules-header': !dark}">
+  <div class="header-content">
+    <div class="img-button-wrapper">
+      <img *ngIf="dark" src="../../../assets/trakto-edu-logo.svg" alt="trakto-edu-logo"/>
+      <img *ngIf="!dark" src="../../../assets/white-trakto-edu-logo.svg" alt="white-trakto-edu-logo"/>
+      <button *ngIf="!dark" class="leave-button">
+        <img src="../../../assets/leave-icon.svg" alt="leave-icon" class="leave-icon">
+        Trocar de ambiente
+      </button>
+    </div>
+    <div class="rightside-info">
+      <img *ngIf="dark" src="../../../assets/calendar.svg" alt="calendar-icon"/>
+      <img *ngIf="!dark" src="../../../assets/white-calendar.svg" alt="white-calendar-icon"/>
+      <span [ngClass]="{'date': dark, 'white-date': !dark}">
+        {{ currentDate | date: 'dd/MM/yyyy' }}
+      </span>
+      <div [ngClass]="{'vertical-separator': dark, 'white-vertical-separator': !dark}"></div>
+      <img *ngIf="dark" src="../../../assets/bell-icon.svg" alt="bell-icon" class="bell-icon" />
+      <img *ngIf="!dark" src="../../../assets/white-bell-icon.svg" alt="white-bell-icon" class="bell-icon" />
+      <div [ngClass]="{'vertical-separator': dark, 'white-vertical-separator': !dark}"></div>
+      <img src="../../../assets/avatar-image.png" alt="avatar-image" class="avatar-image" />
+      <button  [ngClass]="{'arrow-button': dark, 'white-arrow-button': !dark}"></button>
+    </div>
+  </div>
+</header>
