@@ -7,6 +7,7 @@ import { LoginPageComponent } from './components/login-page/login-page.component
 import { ModulesPageComponent } from './components/modules-page/modules-page.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
+import { ModuleComponent } from './components/module/module.component';
 
 const appRoutes: Routes = [
   { path: 'modules', component: ModulesPageComponent },
@@ -19,7 +20,8 @@ const appRoutes: Routes = [
     AppComponent,
     LoginPageComponent,
     ModulesPageComponent,
-    HeaderComponent
+    HeaderComponent,
+    ModuleComponent,
   ],
   imports: [
     BrowserModule,
