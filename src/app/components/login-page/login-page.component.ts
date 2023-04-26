@@ -24,7 +24,7 @@ export class LoginPageComponent implements OnInit {
   ngOnInit() {
     // verificação se o usuário não está logado
     const accessToken = localStorage.getItem('access_token');
-    if (accessToken) {
+    if (!accessToken) {
       this.isLoggedIn = false;
       // para redirecionar ele pra home, caso tente entrar com outra URL
       this.router.navigate(['/']);
