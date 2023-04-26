@@ -7,6 +7,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./modules-page.component.scss']
 })
 export class ModulesPageComponent implements OnInit {
+  showFirstModuleLink = true;
+  showSecondModuleMessage = false;
+  showThirdModuleMessage = false;
+  showFourthModuleLink = true;
 
   constructor(private router: Router) { }
 
@@ -14,6 +18,14 @@ export class ModulesPageComponent implements OnInit {
     const accessToken = localStorage.getItem('access_token');
     if (!accessToken) {
       this.router.navigate(['/']);
+    }
+  }
+
+  goto(url: string, blank?: boolean) {
+    if (blank) {
+      window.open(url, '_blank');
+    } else {
+      this.router.navigate([url]);
     }
   }
 

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-module',
@@ -9,4 +9,10 @@ export class ModuleComponent {
   @Input() moduleTitle: string = '';
   @Input() moduleColor: string = '';
   @Input() moduleImage: string = '';
+  @Output() moduleClick = new EventEmitter<void>();
+
+  onClick() {
+    this.moduleClick.emit();
+  }
+
 }
