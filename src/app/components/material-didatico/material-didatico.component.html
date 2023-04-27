@@ -1,1 +1,15 @@
-<p>material-didatico works!</p>
+<app-header [dark]="false"></app-header>
+<div class="container">
+  <div class="material-content">
+    <p class="material-header">Material didático</p>
+    <p class="material-subtitle">Acesse suas últimas apresentações de aula.</p>
+    <div class="material-grid">
+      <div *ngFor="let slide of slides">
+        <button (click)="goToDocument(slide.id)" class="clickable-image">
+          <img [src]="slide.imageUrl" [alt]="slide.alt" class="carousel-image">
+          <p class="slide-title">{{ slide.title }}</p>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
