@@ -3,7 +3,7 @@
     <div class="img-button-wrapper">
       <img *ngIf="dark" src="../../../assets/trakto-edu-logo.svg" alt="trakto-edu-logo"/>
       <img *ngIf="!dark" src="../../../assets/white-trakto-edu-logo.svg" alt="white-trakto-edu-logo"/>
-      <button *ngIf="!dark" class="leave-button">
+      <button *ngIf="!dark" class="leave-button" (click)="changeEnv()">
         <img src="../../../assets/leave-icon.svg" alt="leave-icon" class="leave-icon">
         Trocar de ambiente
       </button>
