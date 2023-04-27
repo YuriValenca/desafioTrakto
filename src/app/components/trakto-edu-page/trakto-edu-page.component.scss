@@ -1,0 +1,137 @@
+.container {
+  font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #EFF2F9;
+  margin-top: 76px;
+}
+
+.jornada-image {
+  margin: 32px 0 48px;
+  width: calc(100% - 128px);
+}
+
+.trakto-edu-content {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 128px);
+  margin: 0 64px 48px 64px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 56px 0 84px 72px;
+  box-sizing: border-box;
+}
+
+.trakto-edu-header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.week-button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.week-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  background-color: #E4EBFB;
+  border-radius: 500px;
+}
+
+.week-to-week {
+  color: #7183A6;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.carousel-button {
+  background-color: #FFFFFF;
+  outline: none;
+  border: none;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.carousel-header {
+  color: #354564;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 8px;
+}
+
+.carousel-subtitle {
+  color: #7183A6;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.see-all-button {
+  color: #4743FF;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 16px 24px;
+  margin-right: 72px;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #4743FF;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.carousel-image {
+  width: 310px;
+  height: 174px;
+  border-radius: 8px;
+}
+
+.slide-title {
+  color: #354564;
+  font-weight: 600;
+  font-size: 18px;
+  width: 310px;
+  margin-top: 16px;
+  text-align: left;
+}
+
+.youtube-button {
+  display: flex;
+  color: #FF0100;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 16px 24px;
+  margin-right: 72px;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #FF0100;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.youtube-icon {
+  margin-right: 8px;
+}
+
+.clickable-image {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.clickable-image:hover {
+  text-decoration: underline;
+}

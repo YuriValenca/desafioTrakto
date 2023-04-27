@@ -9,9 +9,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { ModuleComponent } from './components/module/module.component';
 import { MaterialDidaticoComponent } from './components/material-didatico/material-didatico.component';
+import { TraktoEduPageComponent } from './components/trakto-edu-page/trakto-edu-page.component';
 
 const appRoutes: Routes = [
   { path: 'modules', component: ModulesPageComponent },
+  { path: 'trakto-edu', component: TraktoEduPageComponent },
   { path: 'material-didatico', component: MaterialDidaticoComponent },
   { path: '', component: LoginPageComponent },
   { path: '**', redirectTo: '', pathMatch: 'full'},
@@ -25,6 +27,7 @@ const appRoutes: Routes = [
     HeaderComponent,
     ModuleComponent,
     MaterialDidaticoComponent,
+    TraktoEduPageComponent,
   ],
   imports: [
     BrowserModule,
