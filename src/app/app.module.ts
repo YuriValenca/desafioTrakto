@@ -8,9 +8,11 @@ import { ModulesPageComponent } from './components/modules-page/modules-page.com
 import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { ModuleComponent } from './components/module/module.component';
+import { MaterialDidaticoComponent } from './components/material-didatico/material-didatico.component';
 
 const appRoutes: Routes = [
   { path: 'modules', component: ModulesPageComponent },
+  { path: 'material-didatico', component: MaterialDidaticoComponent },
   { path: '', component: LoginPageComponent },
   { path: '**', redirectTo: '', pathMatch: 'full'},
 ];
@@ -22,6 +24,7 @@ const appRoutes: Routes = [
     ModulesPageComponent,
     HeaderComponent,
     ModuleComponent,
+    MaterialDidaticoComponent,
   ],
   imports: [
     BrowserModule,
